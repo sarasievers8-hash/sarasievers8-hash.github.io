@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomendas Personalizadas | Flor de Açúcar</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <span class="logo-flower">✿</span>
+        <span>Flor de Açúcar<small>CONFEITARIA ARTESANAL</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="personalizados.html" class="active">Personalizados</a>
+        <a href="sobre.html">Nossa história</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <a href="personalizados.html" class="header-button">Faça sua encomenda</a>
+</header>
+
+<main>
+    <section class="page-banner">
+        <span class="eyebrow">FEITO ESPECIALMENTE PARA VOCÊ</span>
+        <h1>Seu momento merece<br><em>um bolo único.</em></h1>
+        <p>Conte para nós como imagina seu bolo e vamos transformar sua ideia em uma doce realidade.</p>
+    </section>
+
+    <section class="custom-section section-padding">
+        <div class="custom-intro">
+            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=900" alt="Bolo artesanal decorado">
+            <div>
+                <span class="eyebrow">CADA DETALHE IMPORTA</span>
+                <h2>Vamos criar algo <em>especial?</em></h2>
+                <p>
+                    Aniversários, casamentos, comemorações ou simplesmente
+                    um dia que merece ser celebrado. Queremos fazer parte
+                    desse momento!
+                </p>
+                <p>Preencha o formulário ao lado para solicitar sua encomenda.</p>
+            </div>
+        </div>
+
+        <form id="orderForm" class="form-card">
+            <div class="form-heading">
+                <span class="eyebrow">SUA ENCOMENDA</span>
+                <h2>Conte sua ideia ♡</h2>
+                <p>Os campos marcados com * são obrigatórios.</p>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Nome completo *</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="event">Ocasião *</label>
+                    <select id="event" name="event" required>
+                        <option value="">Selecione uma ocasião</option>
+                        <option>Aniversário</option>
+                        <option>Casamento</option>
+                        <option>Chá de bebê</option>
+                        <option>Formatura</option>
+                        <option>Comemoração especial</option>
+                        <option>Outra ocasião</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="flavor">Sabor desejado *</label>
+                    <select id="flavor" name="flavor" required>
+                        <option value="">Escolha um sabor</option>
+                        <option>Chocolate</option>
+                        <option>Morango</option>
+                        <option>Leite Ninho</option>
+                        <option>Doce de leite</option>
+                        <option>Baunilha</option>
+                        <option>Frutas vermelhas</option>
+                        <option>Outro / Quero sugestões</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="size">Tamanho do bolo *</label>
+                    <select id="size" name="size" required>
+                        <option value="">Selecione o tamanho</option>
+                        <option>Pequeno (aprox. 10 pessoas)</option>
+                        <option>Médio (aprox. 20 pessoas)</option>
+                        <option>Grande (aprox. 30 pessoas)</option>
+                        <option>Extra grande (mais de 30 pessoas)</option>
+                        <option>Preciso de orientação</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Data desejada *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Cor predominante da decoração</label>
+                    <input type="text" id="color" name="color" placeholder="Ex.: rosa, branco e dourado">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="details">Conte mais sobre seu bolo *</label>
+                    <textarea id="details" name="details" rows="5" placeholder="Descreva a decoração, tema, referências e outros detalhes..." required></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="button button-primary submit-button">Enviar solicitação ♡</button>
+            <p class="form-note">Sua solicitação será encaminhada pelo WhatsApp. O pedido só será confirmado após nosso contato.</p>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="index.html" class="logo footer-logo">
+        <span class="logo-flower">✿</span>
+        <span>Flor de Açúcar<small>CONFEITARIA ARTESANAL</small></span>
+    </a>
+    <p>Feito com carinho, para adoçar seus momentos. ♡</p>
+    <div class="footer-links">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Nossa história</a>
+        <a href="contato.html">Contato</a>
+    </div>
+    <small>© 2026 Flor de Açúcar. Todos os direitos reservados.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

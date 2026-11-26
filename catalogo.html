@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Flor de Açúcar</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <span class="logo-flower">✿</span>
+        <span>Flor de Açúcar<small>CONFEITARIA ARTESANAL</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html" class="active">Catálogo</a>
+        <a href="personalizados.html">Personalizados</a>
+        <a href="sobre.html">Nossa história</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <a href="personalizados.html" class="header-button">Faça sua encomenda</a>
+</header>
+
+<main>
+    <section class="page-banner">
+        <span class="eyebrow">NOSSAS DELÍCIAS</span>
+        <h1>Um doce para cada <em>momento.</em></h1>
+        <p>Descubra nossos sabores preparados artesanalmente.</p>
+    </section>
+
+    <section class="catalog-section section-padding">
+        <div class="catalog-top">
+            <div>
+                <span class="eyebrow">FEITOS COM CARINHO</span>
+                <h2>Nosso catálogo</h2>
+            </div>
+
+            <input type="search" id="searchInput" class="search-input" placeholder="Pesquisar bolo...">
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="todos">Todos</button>
+            <button class="filter-btn" data-category="chocolate">Chocolate</button>
+            <button class="filter-btn" data-category="frutas">Frutas</button>
+            <button class="filter-btn" data-category="especiais">Especiais</button>
+            <button class="filter-btn" data-category="classicos">Clássicos</button>
+        </div>
+
+        <div class="product-grid catalog-grid" id="catalogGrid">
+
+            <article class="product-card catalog-card" data-category="chocolate" data-name="doce tentação">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700" alt="Bolo de chocolate">
+                <div class="product-info">
+                    <span class="product-category">CHOCOLATE</span>
+                    <h3>Doce Tentação</h3>
+                    <p>Massa de chocolate, recheio cremoso e cobertura de brigadeiro.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 89,90</strong>
+                        <a href="personalizados.html?bolo=Doce%20Tenta%C3%A7%C3%A3o" class="small-order-button">Encomendar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card catalog-card" data-category="frutas" data-name="jardim de morango">
+                <img src="https://www.marquespan.com.br/wp-content/uploads/2025/02/Sessao-do-Studio-50735-scaled.jpg" alt="Bolo de morango">
+                <div class="product-info">
+                    <span class="product-category">FRUTAS</span>
+                    <h3>Bolo de Morango</h3>
+                    <p>Massa branca, creme suave e morangos frescos.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 102,00</strong>
+                        <a href="personalizados.html?bolo=Jardim%20de%20Morango" class="small-order-button">Encomendar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card catalog-card" data-category="especiais" data-name="encanto floral">
+                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=700" alt="Bolo decorado com flores">
+                <div class="product-info">
+                    <span class="product-category">ESPECIAL</span>
+                    <h3>Encanto Floral</h3>
+                    <p>Bolo delicado com decoração floral e recheio de baunilha.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 139,90</strong>
+                        <a href="personalizados.html?bolo=Encanto%20Floral" class="small-order-button">Encomendar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card catalog-card" data-category="classicos" data-name="afeto de cenoura">
+                <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=700" alt="Bolo de cenoura">
+                <div class="product-info">
+                    <span class="product-category">CLÁSSICO</span>
+                    <h3>Afeto de Cenoura</h3>
+                    <p>Bolo fofinho de cenoura com cobertura de chocolate.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 69,90</strong>
+                        <a href="personalizados.html?bolo=Afeto%20de%20Cenoura" class="small-order-button">Encomendar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card catalog-card" data-category="chocolate" data-name="chocolate dos sonhos">
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=700" alt="Bolo de chocolate com cobertura">
+                <div class="product-info">
+                    <span class="product-category">CHOCOLATE</span>
+                    <h3>Chocolate dos Sonhos</h3>
+                    <p>Massa intensa de cacau com ganache de chocolate.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 99,90</strong>
+                        <a href="personalizados.html?bolo=Chocolate%20dos%20Sonhos" class="small-order-button">Encomendar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card catalog-card" data-category="frutas" data-name="bosque vermelho">
+                <img src="https://www.marquespan.com.br/wp-content/uploads/2026/09/6-1.png" alt="Bolo abacaxi com coco">
+                <div class="product-info">
+                    <span class="product-category">FRUTAS</span>
+                    <h3>Abacaxi com coco</h3>
+                    <p>Recheio de frutas vermelhas e creme de leite ninho.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 111,90</strong>
+                        <a href="personalizados.html?bolo=Bosque%20Vermelho" class="small-order-button">Encomendar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card catalog-card" data-category="classicos" data-name="café com carinho">
+                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=700" alt="Bolo caseiro">
+                <div class="product-info">
+                    <span class="product-category">CLÁSSICO</span>
+                    <h3>Café com Carinho</h3>
+                    <p>Bolo caseiro de baunilha com toque de canela.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 64,90</strong>
+                        <a href="personalizados.html?bolo=Caf%C3%A9%20com%20Carinho" class="small-order-button">Encomendar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card catalog-card" data-category="especiais" data-name="rosa de baunilha">
+                <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=700" alt="Bolo decorado">
+                <div class="product-info">
+                    <span class="product-category">ESPECIAL</span>
+                    <h3>Rosa de Baunilha</h3>
+                    <p>Massa amanteigada com creme de baunilha e decoração especial.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 129,90</strong>
+                        <a href="personalizados.html?bolo=Rosa%20de%20Baunilha" class="small-order-button">Encomendar</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>Nenhum bolo encontrado. Tente outra pesquisa. ♡</p>
+    </section>
+
+    <section class="quote-banner">
+        <span>✿</span>
+        <h2>Qual será o próximo<br>doce da sua história?</h2>
+        <a href="personalizados.html" class="button button-primary">Faça sua encomenda</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="index.html" class="logo footer-logo">
+        <span class="logo-flower">✿</span>
+        <span>Flor de Açúcar<small>CONFEITARIA ARTESANAL</small></span>
+    </a>
+    <p>Feito com carinho, para adoçar seus momentos. ♡</p>
+    <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Nossa história</a>
+        <a href="contato.html">Contato</a>
+    </div>
+    <small>© 2026 Flor de Açúcar. Todos os direitos reservados.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

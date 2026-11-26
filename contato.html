@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Flor de Açúcar</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <span class="logo-flower">✿</span>
+        <span>Flor de Açúcar<small>CONFEITARIA ARTESANAL</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="personalizados.html">Personalizados</a>
+        <a href="sobre.html">Nossa história</a>
+        <a href="contato.html" class="active">Contato</a>
+    </nav>
+    <a href="personalizados.html" class="header-button">Faça sua encomenda</a>
+</header>
+
+<main>
+    <section class="page-banner">
+        <span class="eyebrow">ESTAMOS AQUI PARA VOCÊ</span>
+        <h1>Vamos conversar <em>com carinho?</em></h1>
+        <p>Dúvidas, sugestões ou encomendas? Será um prazer atender você.</p>
+    </section>
+
+    <section class="contact-section section-padding">
+        <div class="contact-info">
+            <span class="eyebrow">FALE COM A GENTE</span>
+            <h2>Será um prazer<br><em>conhecer você.</em></h2>
+            <p>Entre em contato pelos nossos canais ou envie uma mensagem pelo formulário.</p>
+
+            <div class="contact-item">
+                <span>♡</span>
+                <div>
+                    <strong>WhatsApp</strong>
+                    <p>(51) 99999-9999</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>✉</span>
+                <div>
+                    <strong>E-mail</strong>
+                    <p>contato@flordeacucar.com.br</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>⌖</span>
+                <div>
+                    <strong>Localização</strong>
+                    <p>Gravataí - Rio Grande do Sul</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>◷</span>
+                <div>
+                    <strong>Atendimento</strong>
+                    <p>Segunda a sábado, das 9h às 18h.</p>
+                </div>
+            </div>
+        </div>
+
+        <form id="contactForm" class="form-card">
+            <div class="form-heading">
+                <span class="eyebrow">ENVIE UMA MENSAGEM</span>
+                <h2>Como podemos ajudar?</h2>
+            </div>
+
+            <div class="form-group">
+                <label for="contactName">Seu nome *</label>
+                <input type="text" id="contactName" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactEmail">Seu e-mail *</label>
+                <input type="email" id="contactEmail" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Assunto *</label>
+                <select id="subject" required>
+                    <option value="">Selecione o assunto</option>
+                    <option>Dúvida sobre produtos</option>
+                    <option>Encomendas</option>
+                    <option>Informações</option>
+                    <option>Sugestões</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contactMessage">Sua mensagem *</label>
+                <textarea id="contactMessage" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+            </div>
+
+            <button type="submit" class="button button-primary submit-button">Enviar mensagem ♡</button>
+            <p id="contactMessageResult" class="form-message" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="index.html" class="logo footer-logo">
+        <span class="logo-flower">✿</span>
+        <span>Flor de Açúcar<small>CONFEITARIA ARTESANAL</small></span>
+    </a>
+    <p>Feito com carinho, para adoçar seus momentos. ♡</p>
+    <div class="footer-links">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Nossa história</a>
+        <a href="personalizados.html">Encomendas</a>
+    </div>
+    <small>© 2026 Flor de Açúcar. Todos os direitos reservados.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
